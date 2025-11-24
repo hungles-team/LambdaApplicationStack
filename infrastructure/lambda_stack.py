@@ -13,6 +13,6 @@ class LambdaStack(Stack):
             "SebasPythonLambda",
             runtime=_lambda.Runtime.PYTHON_3_11,
             handler="handler.lambda_handler",
-            code=_lambda.Code.from_asset("../src"),
+            code=_lambda.Code.from_asset("../app/src"),
             function_name="sebas-python-lambda"
         )
